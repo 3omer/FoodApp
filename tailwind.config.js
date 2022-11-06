@@ -5,16 +5,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Lato', ...defaultTheme.fontFamily.sans],
+        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
-      screens: {
-        xxl: '1410px',
+      colors: {
+        'primary':'#4E60FF',
+          'black': "#2B2B43",
+          'gray': '#545563',
+          'light': '#C7C8D2',
+          'white': '#fff'
       },
     },
   },
-  variants: {
-    borderWidth: ['responsive', 'hover'],
-  },
+
   plugins: [require('@tailwindcss/forms', {
     strategy: 'base', // only generate global styles
     // strategy: 'class', // only generate classes
