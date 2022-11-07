@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@tailwindcss/forms examples</title>
+    <title>FoodApp</title>
     <link rel="stylesheet" href="/css/app.css" />
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
     <style>
@@ -32,7 +32,7 @@
                                 class="absolute -top-1 -right-1 p-0.5 w-5 h-5 bg-primary text-white font-bold text-center text-xs rounded-lg">
                                 4
                             </div>
-                            <img class="m-auto" src="./static/shopping_bag.png" alt="">
+                            <img class="m-auto" src="./static/icons/shopping_bag.png" alt="">
                         </button>
                         <!-- profile -->
                         <button class="bg-gray-lightest p-0.5 rounded-2xl w-12">
@@ -42,8 +42,7 @@
                         <div class="h-3/4 w-px m-auto bg-gray-lightest"></div>
                         <!-- menu -->
                         <button class="bg-gray-lightest p-3 rounded-2xl w-12 hover:bg-primary hover:text-white">
-
-                            <img class="m-auto" src="./static/menu.svg" alt="">
+                            <img class="m-auto" src="./static/icons/menu.svg" alt="">
                         </button>
                     </div>
 
@@ -52,7 +51,7 @@
         </nav>
     </header>
     <main>
-        <div class="sm:flex">
+        <div class="flex flex-col">
             <!-- section: deals -->
             <section class="m-2 p-2 space-y-4">
                 <!-- deal one -->
@@ -67,7 +66,7 @@
                     </div>
                     <!-- image container -->
                     <div>
-                        <img class="m-auto" src="./static/dessert.png" alt="">
+                        <img class="m-auto" src="./static/deals/dessert.png" alt="">
                     </div>
                 </div>
                 <!-- deal 2 -->
@@ -75,19 +74,56 @@
                     <div class="p-4 space-y-4">
                         <!-- header -->
                         <div class="flex justify-between">
-                            <div class="text-xl font-semibold">Fooddies</div>
-                            <div class="text-sm text-gray">Deserty</div>
+                            <div class="text-xl font-semibold">Big Burger</div>
+                            <div class="text-sm text-gray">Fooddies</div>
                         </div>
                         <div class="text-5xl text-secondary font-extrabold">50% OFF</div>
                     </div>
                     <!-- image container -->
                     <div>
-                        <img class="m-auto" src="./static/burger.png" alt="">
+                        <img class="m-auto" src="./static/deals/burger.png" alt="">
                     </div>
                 </div>
             </section>
             <!-- section: filters -->
-            <section></section>
+            <section class="flex gap-2 max-w-sm flex-wrap justify-center">
+                <button class="flex-grow-0 flex-shrink-0 basis-28 py-3.5 border border-gray-lightest rounded-2xl">
+                    <div class="flex flex-col items-center gap-y-2">
+                        <img class="" src="./static/categories/pizza.png" alt="" srcset="">
+                        <span class="text-xs font-bold capitalize">pizza</span>
+                    </div>
+                </button>
+                <button class="flex-grow-0 flex-shrink-0 basis-28 py-3.5 border border-gray-lightest rounded-2xl">
+                    <div class="flex flex-col items-center gap-y-2">
+                        <img class="" src="./static/categories/burger.png" alt="" srcset="">
+                        <span class="text-xs font-bold capitalize">burger</span>
+                    </div>
+                </button>
+                <button class="flex-grow-0 flex-shrink-0 basis-28 py-3.5 border border-gray-lightest rounded-2xl">
+                    <div class="flex flex-col items-center gap-y-2">
+                        <img class="" src="./static/categories/meat.png\" alt="" srcset="">
+                        <span class="text-xs font-bold capitalize">BBQ</span>
+                    </div>
+                </button>
+                <button class="flex-grow-0 flex-shrink-0 basis-28 py-3.5 border border-gray-lightest rounded-2xl">
+                    <div class="flex flex-col items-center gap-y-2">
+                        <img class="" src="./static/categories/sushi.png" alt="" srcset="">
+                        <span class="text-xs font-bold capitalize">sushi</span>
+                    </div>
+                </button>
+                <button class="flex-grow-0 flex-shrink-0 basis-28 py-3.5 border border-gray-lightest rounded-2xl">
+                    <div class="flex flex-col items-center gap-y-2">
+                        <img class="" src="./static/categories/broccoli.png" alt="" srcset="">
+                        <span class="text-xs font-bold capitalize">vegan</span>
+                    </div>
+                </button>
+                <button class="flex-grow-0 flex-shrink-0 basis-28 py-3.5 border border-gray-lightest rounded-2xl">
+                    <div class="flex flex-col items-center gap-y-2">
+                        <img class="" src="./static/categories/cake.png" alt="" srcset="">
+                        <span class="text-xs font-bold capitalize">cake</span>
+                    </div>
+                </button>
+            </section>
             <!-- section: listing -->
             <section></section>
         </div>
