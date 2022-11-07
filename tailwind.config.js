@@ -8,11 +8,13 @@ module.exports = {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'primary':'#4E60FF',
-          'black': "#2B2B43",
-          'gray': '#545563',
-          'light': '#C7C8D2',
-          'white': '#fff'
+        'primary': '#4E60FF',
+        'primary-light': '#F3F4FF',
+        'black': "#2B2B43",
+        'gray': '#545563',
+        'gray-lightest': '#EDEEF2',
+        'light': '#C7C8D2',
+        'white': '#fff'
       },
     },
   },

@@ -50,7 +50,13 @@ const config = {
       filename: 'css/[name].css'
     }),
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      title: 'FoodApp - Login',
+      template: 'src/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'FoodApp - Home',
+      template: 'src/home.html',
+      filename: 'home.html'
     }),
     new CopyPlugin({
       patterns: [
