@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodApp</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="stylesheet" href="/css/app.css" />
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
     <style>
@@ -54,12 +54,16 @@
                         <!-- menu -->
                         <button class="group bg-gray-lightest p-3 rounded-2xl w-12 hover:bg-primary hover:text-white">
                             <!-- <img class="m-auto" src="./static/icons/menu.svg" alt=""> -->
-                            <svg class="m-auto stroke-gray group-hover:stroke-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 8H14" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M2 4H14" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M2 12H14" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
+                            <svg class="m-auto stroke-gray group-hover:stroke-white" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8H14" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2 4H14" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2 12H14" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
                         </button>
                     </div>
 
@@ -70,31 +74,36 @@
     <main class="mt-20">
         <div class="flex flex-col gap-y-8 my-4 mx-2">
             <!-- section: deals -->
-            <section class="space-y-4">
+            <section class="flex flex-col gap-4 flex-wrap sm:flex-row justify-center">
                 <!-- deal one -->
-                <a class="flex flex-col cursor-pointer rounded-2xl bg-primary-light">
+                <a class="flex flex-col md:flex-row-reverse  cursor-pointer rounded-2xl bg-primary-light">
                     <div class="p-4 space-y-4">
                         <!-- header -->
-                        <div class="flex justify-between">
-                            <div class="text-xl font-semibold">All deserts</div>
-                            <div class="text-sm text-gray">Deserty</div>
+                        <div class="flex md:flex-col md:h-full justify-between">
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold">All deserts</h3>
+                                <h1 class="text-4xl text-primary font-extrabold">20% OFF</h1>
+                            </div>
+                            <h5 class="text-sm text-gray">Deserty</h5>
                         </div>
-                        <div class="text-4xl text-primary font-extrabold">20% OFF</div>
                     </div>
                     <!-- image container -->
                     <div class="h-[188px]">
                         <img class="m-auto max-h-full" src="./static/deals/dessert.png" alt="">
                     </div>
                 </a>
+
                 <!-- deal 2 -->
-                <a class="block cursor-pointer rounded-2xl bg-secondary-light">
+                <a class="flex flex-col md:flex-row-reverse  cursor-pointer rounded-2xl bg-secondary-light">
                     <div class="p-4 space-y-4">
                         <!-- header -->
-                        <div class="flex justify-between">
-                            <div class="text-xl font-semibold">Big Burger</div>
-                            <div class="text-sm text-gray">Fooddies</div>
+                        <div class="flex md:flex-col md:h-full justify-between">
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold">Big Burger</h3>
+                                <h1 class="text-4xl text-secondary font-extrabold">50% OFF</h1>
+                            </div>
+                            <h5 class="text-sm text-gray">Fooddies</h5>
                         </div>
-                        <div class="text-4xl text-secondary font-extrabold">50% OFF</div>
                     </div>
                     <!-- image container -->
                     <div class="h-[188px]">
@@ -152,7 +161,8 @@
                     <div class="flex flex-col rounded-2xl border border-gray-lightest">
                         <!-- image container -->
                         <div>
-                            <img class="rounded-t-2xl max-h-full w-full" src="./static/restaurants/royal_sushi.png" alt="">
+                            <img class="rounded-t-2xl max-h-full w-full" src="./static/restaurants/royal_sushi.png"
+                                alt="">
                         </div>
                         <!-- description -->
                         <div class="flex justify-between p-4">
@@ -202,7 +212,8 @@
                     <div class="flex flex-col rounded-2xl border border-gray-lightest">
                         <!-- image container -->
                         <div>
-                            <img class="rounded-t-2xl w-full max-h-full" src="./static/restaurants/burger_pizza.png" alt="">
+                            <img class="rounded-t-2xl w-full max-h-full" src="./static/restaurants/burger_pizza.png"
+                                alt="">
                         </div>
                         <!-- description -->
                         <div class="flex justify-between p-4">
@@ -261,7 +272,8 @@
                     <div class="flex flex-col rounded-2xl border border-gray-lightest">
                         <!-- image container -->
                         <div>
-                            <img class="rounded-t-2xl w-full max-h-full" src="./static/restaurants/ninja_sushi.png" alt="">
+                            <img class="rounded-t-2xl w-full max-h-full" src="./static/restaurants/ninja_sushi.png"
+                                alt="">
                         </div>
                         <!-- description -->
                         <div class="flex justify-between p-4">
@@ -288,7 +300,7 @@
                             <!-- icons -->
                             <div>
                                 <button class="relative ">
-                                   
+
                                     <svg class="m-auto stroke-gray" width="20" height="20" viewBox="0 0 20 20"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
