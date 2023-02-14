@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <style>
+        @font-face {
+            font-family: "Nunito";
+            src: url("./static/Nunito-VariableFont_wght.ttf");
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="fixed top-0 z-50 w-full bg-white">
+            <div class="p-2 border-b border-gray-lightest">
+                <div class="flex content-between">
+                    <!-- logo -->
+                    <a href="" class="grow">
+                        <img src="./static/logo.png" alt="Food Delivery Logo">
+                    </a>
+                    <!-- nav menu -->
+                    <div class="flex gap-2.5 max-h-12">
+                        <!-- shopping bag -->
+                        <button class="bg-gray-lightest p-3 rounded-2xl w-12 relative">
+                            <!-- quantity badge -->
+                            <div
+                                class="absolute -top-1 -right-1 p-0.5 w-5 h-5 bg-primary text-white font-bold text-center text-xs rounded-lg">
+                                4
+                            </div>
+                            <svg class="m-auto stroke-primary" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 1.66675L2.5 5.00008V16.6667C2.5 17.1088 2.67559 17.5327 2.98816 17.8453C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8453C17.3244 17.5327 17.5 17.1088 17.5 16.6667V5.00008L15 1.66675H5Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2.5 5H17.5" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.3333 8.33325C13.3333 9.21731 12.9821 10.0652 12.357 10.6903C11.7319 11.3154 10.884 11.6666 9.99996 11.6666C9.1159 11.6666 8.26806 11.3154 7.64294 10.6903C7.01782 10.0652 6.66663 9.21731 6.66663 8.33325"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                        <!-- profile -->
+                        <a href="#" class="bg-gray-lightest outline outline-primary p-0.5 rounded-2xl w-12">
+                            <img class="m-auto rounded-2xl" src="./static/profile.png" alt="">
+                        </a>
+                        <!-- divider -->
+                        <div class="h-3/4 w-px m-auto bg-gray-lightest"></div>
+                        <!-- menu -->
+                        <button class="group bg-gray-lightest p-3 rounded-2xl w-12 hover:bg-primary hover:text-white">
+                            <!-- <img class="m-auto" src="./static/icons/menu.svg" alt=""> -->
+                            <svg class="m-auto stroke-gray group-hover:stroke-white" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8H14" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2 4H14" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2 12H14" stroke="" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto mt-20">
+        <div class="flex flex-col md:flex-row my-4 mx-2">
+
+
+            <!-- section: settings -->
+            <section class="md:w-full md:max-w-xs">
+                <h2 class="font-semibold text-xl my-4 capitalize">settings</h2>
+                <ul>
+                    <li>
+                        <a
+                            class="group flex items-center p-4 rounded-xl border border-gray-lightest hover:border-primary hover:bg-primary-light active:bg-primary-light">
+                            <!-- item icon -->
+                            <div
+                                class="bg-gray-lightest p-3 rounded-2xl w-10 h-10 group-hover:bg-primary group-hover:text-white">
+                                <svg class="w-full h-full m-auto stroke-gray group-hover:stroke-white" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0653 12.8512 14.2174 12.5 13.3334 12.5H6.66671C5.78265 12.5 4.93481 12.8512 4.30968 13.4763C3.68456 14.1014 3.33337 14.9493 3.33337 15.8333V17.5"
+                                        stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z"
+                                        stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <!-- tilte -->
+                            <div class="mx-3">
+                                <h2 class="font-bold text-sm capitalize">account</h2>
+                                <h4 class="text-xs text-gray">Personal information</h4>
+                            </div>
+
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- section: account -->
+            <section class="">
+                <h2 class="font-semibold text-xl my-4 capitalize">account</h2>
+                <div class="mx-auto border border-gray-lightest rounded-xl py-6 px-4">
+                    <h4 class="text-lg font-bold">personal information</h4>
+                    <!-- avatr-control -->
+                    <span class="my-2 text-gray font-semibold">avatar</span>
+                    <div class="flex items-center">
+                        <!-- avatar preview -->
+                        <div class="w-20 h-20">
+                            <img class="w-full rounded-lg" src="./static/profile.png" alt="profile pic">
+                        </div>
+                        <div class="flex flex-row justify-end md:justify-center">
+                            <button
+                                class="border border-primary text-primary rounded-lg py-3 px-4 font-bold">Change</button>
+                            <button class="mx-3 text-gray rounded-lg py-3 px-4 font-bold">remove</button>
+                        </div>
+                    </div>
+
+                    <div class="my-4 columns-1 md:columns-2">
+                        <!-- input group: firstname -->
+                        <div>
+                            <label class="block" for="firstname">
+                                <span class="text-gray text-xs font-semibold capitalize">first name</span>
+                                <input type="text" name="firstname" id="firstname" placeholder="Rash Ahmed" class="block
+                                mt-1
+                                w-full
+                                rounded-md
+                                border-light
+                                shadow-sm
+                                focus:border-primary/50 focus:ring focus:ring-primary/40 focus:ring-opacity-50
+                              ">
+                            </label>
+                        </div>
+
+                        <!-- input group: lastname -->
+                        <div>
+                            <label class="block" for="email">
+                                <span class="text-gray text-xs font-semibold capitalize">email</span>
+                                <input type="email" name="email" id="email" placeholder="name@example.com" class="block 
+                                mt-1
+                                w-full
+                                rounded-md
+                                border-light
+                                shadow-sm
+                                focus:border-primary/50 focus:ring focus:ring-primary/40 focus:ring-opacity-50
+                              ">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+
+</html>

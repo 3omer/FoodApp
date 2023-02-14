@@ -58,6 +58,11 @@ const config = {
       template: 'src/home.html',
       filename: 'home.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'FoodApp - Profile',
+      template: 'src/profile.html',
+      filename: 'profile.html'
+    }),
     new CopyPlugin({
       patterns: [
         { from: "src/static", to: "static" },
